@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oluwatobiloba Cold Store</title>
+
+  <style>
+
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background-color: #eef2f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 90%;
+      margin: auto;
+    }
+
+ 
+    .btn {
+      background-color: #198754;
+      color: #fff;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .btn:hover {
+      background-color: #146c43;
+    }
+
+    header {
+      background-color: #0d6efd;
+      color: #fff;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: linear-gradient(
+          rgba(0,0,0,0.6),
+          rgba(0,0,0,0.6)
+        ),
+        url("img/bg.jpeg") center/cover no-repeat;
+      color: #fff;
+      padding: 110px 20px;
+      text-align: left;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      max-width: 600px;
+    }
+
+    .hero p {
+      margin: 20px 0 30px;
+      max-width: 520px;
+      font-size: 18px;
+    }
+
+    .products {
+      background-color: #fff;
+      padding: 70px 0;
+    }
+
+    .products h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      background-color: #f8f9fa;
+      border-radius: 6px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    .services {
+      padding: 60px 0;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .service-box {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #212529;
+      color: #ccc;
+      text-align: center;
+      padding: 25px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container header-flex">
+      <h2>Oluwatobiloba</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Trusted Frozen Poultry Cold Store</h1>
+      <p>
+        Oluwatobiloba Cold Store specializes in safe, hygienic storage of chicken,
+        turkey, and duck using modern cold-chain systems.
+      </p>
+      <button class="btn" onclick="return confirm('Are you sure you want to place an order?')">Place Order</button>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="container">
+      <h2>Our Frozen Poultry</h2>
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="img/chicken.webp" alt="Chicken">
+          <h3>Frozen Chicken</h3>
+          <p>Fresh, clean, and properly frozen for long preservation.</p>
+        </div>
+
+        <div class="product-card">
+          <img src="img/turkey.webp" alt="Turkey">
+          <h3>Frozen Turkey</h3>
+          <p>Ideal for restaurants, events, and bulk buyers.</p>
+        </div>
+
+        <div class="product-card">
+          <img src="img/duck.jpeg" alt="Duck">
+          <h3>Frozen Duck</h3>
+          <p>Handled hygienically and stored at optimal temperature.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container service-grid">
+
+      <div class="service-box">
+        <h3>Temperature Control</h3>
+        <p>We maintain constant freezing temperatures to prevent spoilage.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>Bulk Supply</h3>
+        <p>Reliable supply for hotels, eateries, and retailers.</p>
+      </div>
+
+      <div class="service-box">
+        <h3>Hygienic Storage</h3>
+        <p>All poultry products are handled under strict hygiene standards.</p>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2026 Oluwatobiloba Cold Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
